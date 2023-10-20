@@ -185,6 +185,10 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+# AWS settings were insufficient since the walkthrough was confusing and vague of content to follow it accordingly! 
+# Deployment to Heroku will fail thanks to this flaw. 
+# No folders can't be uploaded at this moment to AWS. 
+
 if 'USE_AWS' in os.environ:
 
     # Cache control
